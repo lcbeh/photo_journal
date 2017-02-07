@@ -1,8 +1,6 @@
-<h1>All Photo Notes</h1>
+<h1>Collections</h1>
 
 <% @notes.each do |note| %>
   <p><%= note.title %></p>
-  <p><%= note.description %></p>
-  <img src="<%= note.image %>"></img>
-  <p><%= link_to 'Show',note_path(note) %></p>
+  <a href="<%= note_path(note)%>"><img class="square" src="<%= note.image.show %>" /></a>
 <% end %>

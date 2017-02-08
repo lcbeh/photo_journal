@@ -1,11 +1,20 @@
-<p>
-  <strong>Title:</strong>
-  <%= @note.title %>
-</p>
+<div class="container-fluid home-border">
+    <a class="col-md-1" href="<%= notes_path%>">Home</a>
+    <a class="col-md-1" href="<%= edit_note_path(@note)%>">Edit</a>
+    <a class="col-md-10" href="#">Delete</a>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @note.description %>
-</p>
+<body style="background-image: url('<%= @note.image.page %>'); background-repeat: no-repeat; background-size: cover">
+  <div class="col-md-8"></div>
+  <div class="text-info col-md-3">
+    <h4>
+      <strong><%= @note.title %></strong>
+    </h4>
 
-<img src="<%= @note.image %>"></img>
+    <div>
+      <%= simple_format( @note.description )%>
+    </p>
+  </div>
+
+
+</body>

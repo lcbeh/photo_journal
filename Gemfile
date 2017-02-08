@@ -36,6 +36,10 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'fog'
 gem 'fog-aws'
 gem 'mini_magick'
+
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'font-awesome-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :development, :test do

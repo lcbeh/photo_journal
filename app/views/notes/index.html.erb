@@ -1,6 +1,21 @@
-<h1>Collections</h1>
+<head>
+    <style>@import url('https://fonts.googleapis.com/css?family=Lobster+Two');</style>
+</head>
 
-<% @notes.each do |note| %>
-  <p><%= note.title %></p>
-  <a href="<%= note_path(note)%>"><img class="square" src="<%= note.image.show %>" /></a>
-<% end %>
+<div class="container-fluid home-border">
+    <a class="col-md-1" href="#"></a>
+    <a class="col-md-10" href="#"></a>
+    <a class="col-md-1" href="<%= new_note_path %>">Add Note</a>
+</div>
+
+<h2 class="text-center">Collections</h2>
+
+<div class="container content-wrapper">
+  <% @notes.each_slice(4) do |threenotes| %>
+    <div class="row">
+      <% threenotes.each do |note| %>
+        <a class="col-md-3 text-center content" href="<%= note_path(note)%>"><img class="square" src="<%= note.image.show %>" /></a>
+      <% end %>
+    </div>
+  <% end %>
+</div>

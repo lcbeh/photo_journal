@@ -33,10 +33,13 @@ class PhotoNoteUploader < CarrierWave::Uploader::Base
   # version :thumb do
   #   process resize_to_fit: [50, 50]
   # end
-    # process resize_to_fit: [1024, 768]
 
     version :show do
-      process resize_to_fill: [300, 300]
+      process resize_to_fill: [250, 250]
+    end
+
+    version :page do
+      process resize_to_fill: [1024, 768]
     end
 
 

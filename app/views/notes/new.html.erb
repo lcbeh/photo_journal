@@ -1,20 +1,24 @@
-<%= form_for :note, url: notes_path do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+<body style="background-color: grey">
 
-  <p>
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </p>
+  <%= form_for :note, url: notes_path do |f| %>
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
 
-  <p>
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
-  </p>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
 
-  <p>
-    <%= f.submit %>
-  </p>
+    <p>
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
   <% end %>
+
+</body>

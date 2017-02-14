@@ -64,4 +64,28 @@ textarea {
   margin: 0 1% 0 1%;
 }
 
-// ======== Link ==================
+// ======== New Form ================
+
+.new-form {
+  background-color: #ECF0F1;
+  border: 1px solid #BFBFBF;
+  border-radius: 10px;
+  margin: 2% auto;
+  padding: 5% 3% 0.5% 3%;
+  width: 40%;
+}
+
+.form-input {
+  background-color: #fff;
+  border: 1px solid #BFBFBF;
+  border-radius: 5px;
+}
+
+.submit-new-button {
+  background-color: #CAEDCA;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 5% auto;
+  padding: 1%;
+  width: 30%;
+}
